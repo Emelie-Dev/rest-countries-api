@@ -1,0 +1,47 @@
+@font-face {
+  font-family: boldFont;
+  src: url('../../../public/assets/Fonts/NunitoSans_10pt-Bold.ttf');
+}
+
+@font-face {
+  font-family: regularFont;
+  src: url('../../../public/assets/Fonts/NunitoSans_10pt-Regular.ttf');
+}
+
+form {
+  width: 37%;
+  background: white;
+  box-shadow: 1px 1px 8px -4px black;
+  border-radius: 2px;
+  padding: 1rem;
+  padding-left: 2rem;
+  padding-right: 0;
+  position: relative;
+}
+
+.search-bar {
+  border: none;
+  outline: none;
+  font-family: boldFont;
+  color: var(--dark-gray);
+  font-size: 1.1rem;
+  width: calc(100% - 2.7rem);
+  margin-left: 2.7rem;
+}
+
+::placeholder {
+  color: var(--dark-gray);
+  font-size: 0.9rem;
+  font-family: regularFont;
+}
+
+.icon-box {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-icon {
+  color: var(--dark-gray);
+}

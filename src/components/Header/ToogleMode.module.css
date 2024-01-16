@@ -1,0 +1,28 @@
+@font-face {
+  font-family: mediumFont;
+  src: url('../../../public/assets/Fonts/NunitoSans_10pt-Bold.ttf');
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.icon-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.icon {
+  fill: none;
+  width: 1.2rem;
+  height: 1.2rem;
+}
+
+.mode-type {
+  font-family: mediumFont;
+}

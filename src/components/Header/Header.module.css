@@ -1,0 +1,19 @@
+@font-face {
+  font-family: boldFont;
+  src: url("../../../public/assets/Fonts/NunitoSans_10pt-ExtraBold.ttf");
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  background: white;
+  box-shadow: 1px 1px 10px -6px black;
+
+}
+
+.head {
+  font-family: boldFont;
+ 
+ 
+}

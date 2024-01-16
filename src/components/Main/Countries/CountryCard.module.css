@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: boldFont;
+    src: url('../../../../public/assets/Fonts/NunitoSans_10pt-ExtraBold.ttf');
+}
+
+@font-face {
+
+    font-family: smallFont;
+    src: url('../../../../public/assets/Fonts/NunitoSans_7pt_Condensed-Bold.ttf');
+}
+
+@font-face {
+    font-family: normalFont;
+    src: url('../../../../public/assets/Fonts/NunitoSans_10pt-Regular.ttf');
+}
+
+
+.article {
+
+  border-radius: 8px;
+  padding: 0;
+  margin-right: 3.5rem;
+  width: 16.5rem;
+  box-shadow: 1px 1px 10px -5px black;
+  margin-bottom: 4.5rem;
+  color: var(--very-dark-blue);
+  background: var(--white);
+  cursor: pointer;
+
+}
+
+.article:nth-child(4n) {
+
+    margin-right: 0;
+}
+
+.article:hover {
+
+    
+
+}
+
+.figure {
+
+    display: flex;
+    flex-direction: column;
+
+}
+
+.img {
+
+    height: 11rem;
+    border-radius: 8px;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
+.caption {
+
+    margin: 1.5rem 1.5rem 0rem;
+    font-family: boldFont;
+    font-size: 1.1rem;
+    
+}
+
+.info {
+
+    display: flex;
+    flex-direction: column;
+    margin: 1rem 1.5rem 2.5rem;
+    
+}
+
+.info-box {
+
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.4rem;
+
+}
+
+.info-title {
+
+font-family: smallFont;
+color: var(--dark-blue);
+font-size: 0.95rem;
+
+}
+
+.info-value {
+
+    font-family: normalFont;
+    font-size: 0.9rem;
+    color: var(--dark-blue);
+}
+
