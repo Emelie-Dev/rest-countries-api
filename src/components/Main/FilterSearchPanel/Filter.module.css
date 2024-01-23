@@ -20,3 +20,15 @@
     background: var(--dark-blue);
     color: var(--white);
 }
+
+/* Media Queries */
+
+@media screen and (max-width: 999px) {
+
+ .select {
+
+    font-size: 0.9rem;
+    padding: 1.2rem 1.5rem;
+ }
+      
+    }

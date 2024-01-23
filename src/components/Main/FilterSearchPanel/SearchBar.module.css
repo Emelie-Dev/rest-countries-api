@@ -51,3 +51,36 @@ form {
   font-family: regularFont;
   opacity: 0.9;
 }
+
+
+/* Media Queries */
+
+     
+@media screen and (max-width: 999px) {
+  form {
+  
+    width: 45%;
+  }
+}  
+
+
+@media screen and (max-width: 899px) {
+  form {
+  
+    width: 50%;
+  }
+}  
+
+
+@media screen and (max-width: 799px) {
+  form {
+  
+    width: 55%;
+  }
+
+  .search-bar {
+   
+    font-size: 1rem;
+
+  }
+}  

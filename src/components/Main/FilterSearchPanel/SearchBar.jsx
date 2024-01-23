@@ -13,14 +13,13 @@ const SearchBar = () => {
   const searchCountry = (e) => {
     const searchValue = String(searchRef.current.value).trim();
 
-    const inputData = String(e.nativeEvent.data);
 
     setCountries(
       fixedCountries.filter((country) => {
         const name =
-          country.name.common.toLowerCase() || country.name.toLowerCase();
+          country.name.common || country.name;
 
-        return name.startsWith(String(searchValue));
+        return name.toLowerCase().startsWith(String(searchValue));
       })
     );
   };

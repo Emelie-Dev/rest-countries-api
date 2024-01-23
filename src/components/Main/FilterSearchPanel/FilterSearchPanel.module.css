@@ -7,3 +7,35 @@
     
    
 }
+
+
+/* Media Queries */
+
+@media screen and (max-width: 1299px) and (min-width: 900px) {
+    
+    .search-box {
+
+        margin: 3.5rem 3rem;
+    }
+      
+    }
+
+    
+
+    @media screen and (max-width: 899px) and (min-width: 800px) {
+    
+        .search-box {
+    
+            margin: 3.5rem 2.5rem;
+        }
+          
+        }
+
+        @media screen and (max-width: 799px) {
+    
+            .search-box {
+        
+                margin: 3.5rem 2rem;
+            }
+              
+            }

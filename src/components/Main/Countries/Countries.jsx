@@ -13,7 +13,22 @@ const Countries = () => {
   const [loading, setLoading] = useState(true);
   const [countries, setCountries] = useState([]);
   const [showTopArrow, setShowTopArrow] = useState(false);
-  const [ darkMode, setDarkMode ] = useContext(ModeContext);
+  const [darkMode, setDarkMode] = useContext(ModeContext);
+
+  // Add resize handler 
+  
+  const matchWidth = () => {
+    let gridNumber = 0;
+
+    if (window.matchMedia('(min-width: 1000px)').matches) {
+      gridNumber = 4;
+    } else {
+
+      gridNumber = 3;
+    }
+
+    return gridNumber;
+  };
 
   let fixedCountriesRef = useRef([]);
 
@@ -27,10 +42,8 @@ const Countries = () => {
   };
 
   const scrollToTop = () => {
-
     document.documentElement.scrollTop = 0;
-
-  }
+  };
 
   useEffect(() => {
     (async () => {
@@ -58,7 +71,6 @@ const Countries = () => {
     };
   }, []);
 
-
   return (
     <main>
       <CountryContext.Provider
@@ -71,15 +83,26 @@ const Countries = () => {
         title="Move to the top"
         className={` ${styles['top-arrow-box']} ${
           showTopArrow ? styles['show-top-arrow-box'] : ''
-        } ${darkMode ? styles['dark-arrow-box'] : ''}`} onClick={scrollToTop}
+        } ${darkMode ? styles['dark-arrow-box'] : ''}`}
+        onClick={scrollToTop}
       >
-        <FaArrowUp className={`${styles['top-arrow']} ${darkMode ? styles['dark-arrow'] : ''}`} />
+        <FaArrowUp
+          className={`${styles['top-arrow']} ${
+            darkMode ? styles['dark-arrow'] : ''
+          }`}
+        />
       </span>
 
       {loading ? (
-        <div className={`${styles.loader} ${darkMode ? styles.dark : ''}`}></div>
+        <div
+          className={`${styles.loader} ${darkMode ? styles.dark : ''}`}
+        ></div>
       ) : (
-        <div className={styles.main}>
+        <div
+          className={`${styles.main} ${
+            countries.length < matchWidth() ? styles['main-select'] : ''
+          }`}
+        >
           {countries.map((country, index) => (
             <CountryCard key={index} country={country} />
           ))}
