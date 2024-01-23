@@ -1,28 +1,47 @@
-import React from "react"
-import Header from "./components/Header/Header"
-import Main from "./components/Main/Main"
-import { Routes, Route } from "react-router-dom"
-import Countries from "./components/Main/Countries/Countries"
+import React, { useEffect, useState } from 'react';
+import Header from './components/Header/Header';
+import { Routes, Route } from 'react-router-dom';
+import Countries from './components/Main/Countries/Countries';
+import CountryData from './components/Main/Countries/CountryData';
+import styles from './App.module.css';
+
+export const ModeContext = React.createContext();
 
 function App() {
-  
+  const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    const mode = localStorage.getItem('mode');
+    
+    if(mode === 'true') {
+      setDarkMode(true)
+    } else {
+      setDarkMode(false)
+    }
+  }, [])
+
+  useEffect(() => {
+    localStorage.setItem('mode', `${darkMode}`);
+
+    if (darkMode) {
+      document.body.classList.add(styles.dark);
+    } else {
+      document.body.classList.remove(styles.dark);
+    }
+  }, [darkMode]);
 
   return (
-   
-   <>
-   
-    <Header />
+    <>
+      <ModeContext.Provider value={[darkMode, setDarkMode]}>
+        <Header />
 
-    <Main />
-
-    <Routes>
-
-      <Route path='/' element={<Countries /> }/>
-      <Route path='/country/:country' element={<Countries />} />
-    </Routes>
-
-   </>
-  )
+        <Routes>
+          <Route path="/" element={<Countries />} />
+          <Route path="/country/:country" element={<CountryData />} />
+        </Routes>
+      </ModeContext.Provider>
+    </>
+  );
 }
 
-export default App
+export default App;

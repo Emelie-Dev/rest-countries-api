@@ -1,12 +1,4 @@
-@font-face {
-  font-family: boldFont;
-  src: url('../../../public/assets/Fonts/NunitoSans_10pt-Bold.ttf');
-}
 
-@font-face {
-  font-family: regularFont;
-  src: url('../../../public/assets/Fonts/NunitoSans_10pt-Regular.ttf');
-}
 
 form {
   width: 37%;
@@ -27,9 +19,11 @@ form {
   font-size: 1.1rem;
   width: calc(100% - 2.7rem);
   margin-left: 2.7rem;
+  background: white;
 }
 
-::placeholder {
+
+.search-bar::placeholder {
   color: var(--dark-gray);
   font-size: 0.9rem;
   font-family: regularFont;
@@ -44,4 +38,16 @@ form {
 
 .search-icon {
   color: var(--dark-gray);
+}
+
+.dark {
+  background: var(--dark-blue);
+  color: var(--white);
+}
+
+.dark::placeholder {
+  color: var(--white);
+  font-size: 0.9rem;
+  font-family: regularFont;
+  opacity: 0.9;
 }

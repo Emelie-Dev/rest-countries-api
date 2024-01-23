@@ -1,5 +1,5 @@
 import React from 'react'
-import styles from './Main.module.css'
+import styles from './FilterSearchPanel.module.css'
 import SearchBar from './SearchBar'
 import Filter from './Filter'
 

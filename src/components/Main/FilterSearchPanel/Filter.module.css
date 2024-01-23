@@ -1,9 +1,6 @@
 
 
-@font-face {
-    font-family: boldFont;
-    src: url('../../../public/assets/Fonts/NunitoSans_10pt-ExtraLightItalic.ttf');
-}
+
 .select {
 
     margin-left: auto;
@@ -14,6 +11,12 @@
     padding-left: 1.5rem;
     cursor: pointer;
      font-size: 1rem;
-    font-family: boldFont;
+    font-family: regularFont;
    
+}
+
+.dark {
+
+    background: var(--dark-blue);
+    color: var(--white);
 }

@@ -1,0 +1,27 @@
+
+.button {
+
+    border: none;
+    outline: none;
+    padding: 0.2rem 1.5rem;
+    font-family: lightFont;
+    font-size: 1rem;
+    background: var(--white);
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 1px 1px 6px -3px black;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+}
+
+.button:hover {
+
+    box-shadow: inset 1px 1px 1px 1px black;
+    
+    }
+
+ .dark-button {
+
+        background: var(--dark-blue);
+        color: white;
+       }

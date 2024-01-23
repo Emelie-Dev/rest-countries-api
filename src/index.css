@@ -1,24 +1,56 @@
 :root {
-
-    
---dark-blue: hsl(209, 23%, 22%);
---very-dark-blue-bg: hsl(207, 26%, 17%);
---very-dark-blue: hsl(200, 15%, 8%);
---dark-gray: hsl(0, 0%, 52%);
---very-light-gray: hsl(0, 0%, 98%);
---white: hsl(0, 0%, 100%);
-
+  --dark-blue: hsl(209, 23%, 22%);
+  --very-dark-blue-bg: hsl(207, 26%, 17%);
+  --very-dark-blue: hsl(200, 15%, 8%);
+  --dark-gray: hsl(0, 0%, 52%);
+  --very-light-gray: hsl(0, 0%, 98%);
+  --white: hsl(0, 0%, 100%);
 }
 
 * {
-
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
-
-    background: var(--very-light-gray);
- 
+  background: var(--very-light-gray);
+  
 }
+
+@font-face {
+  font-family: extraBoldFont;
+  src: url('../public/assets/Fonts/NunitoSans_10pt-ExtraBold.ttf');
+}
+
+@font-face {
+  font-family: boldFont;
+  src: url('../public/assets/Fonts/NunitoSans_10pt-Bold.ttf');
+}
+
+@font-face {
+  font-family: condensedBoldFont;
+  src: url('../public/assets/Fonts/NunitoSans_10pt_Condensed-Bold.ttf');
+}
+
+@font-face {
+  font-family: regularFont;
+  src: url('../public/assets/Fonts/NunitoSans_10pt-Regular.ttf');
+}
+
+
+
+@font-face {
+  font-family: lightFont;
+  src: url('../public/assets/Fonts/NunitoSans_10pt-Light.ttf');
+}
+
+
+
+@font-face {
+  font-family: blackFont;
+  src: url('../public/assets/Fonts/NunitoSans_10pt-Black.ttf');
+}
+
+  

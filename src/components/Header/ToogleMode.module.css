@@ -1,13 +1,21 @@
-@font-face {
-  font-family: mediumFont;
-  src: url('../../../public/assets/Fonts/NunitoSans_10pt-Bold.ttf');
-}
+
 
 .mode {
   display: flex;
   align-items: center;
   margin-left: auto;
   cursor: pointer;
+  user-select: none;
+}
+
+.mode:hover {
+
+  opacity: 0.8;
+}
+
+.mode:active {
+
+  transform: translateY(1px);
 }
 
 .icon-box {
@@ -24,5 +32,6 @@
 }
 
 .mode-type {
-  font-family: mediumFont;
+  font-family: boldFont;
 }
+
