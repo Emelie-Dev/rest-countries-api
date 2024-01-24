@@ -11,13 +11,11 @@ const SearchBar = () => {
   const searchRef = useRef();
 
   const searchCountry = (e) => {
-    const searchValue = String(searchRef.current.value).trim();
-
+    const searchValue = String(searchRef.current.value).toLowerCase().trim();
 
     setCountries(
       fixedCountries.filter((country) => {
-        const name =
-          country.name.common || country.name;
+        const name = country.name.common || country.name;
 
         return name.toLowerCase().startsWith(String(searchValue));
       })
