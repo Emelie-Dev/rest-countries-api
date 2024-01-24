@@ -2,7 +2,7 @@ import axios from 'axios';
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import CountryCard from './CountryCard';
 import styles from './Countries.module.css';
-import data from '../../../../public/data.json';
+import data from '../../../data.json';
 import FilterSearchPanel from '../FilterSearchPanel/FilterSearchPanel';
 import { FaArrowUp } from 'react-icons/fa';
 import { ModeContext } from '../../../App';

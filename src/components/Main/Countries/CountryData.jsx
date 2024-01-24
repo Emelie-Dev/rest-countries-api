@@ -4,7 +4,7 @@ import axios from 'axios';
 import styles from './CountryData.module.css';
 import { HiOutlineArrowNarrowLeft } from 'react-icons/hi';
 import Button from '../Button/Button';
-import data from '../../../../public/data.json';
+import data from '../../../data.json';
 import { ModeContext } from '../../../App'
 
 const CountryData = () => {

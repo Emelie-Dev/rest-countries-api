@@ -21,36 +21,36 @@ body {
 
 @font-face {
   font-family: extraBoldFont;
-  src: url('../public/assets/Fonts/NunitoSans_10pt-ExtraBold.ttf');
+  src: url('./assets/Fonts/NunitoSans_10pt-ExtraBold.ttf');
 }
 
 @font-face {
   font-family: boldFont;
-  src: url('../public/assets/Fonts/NunitoSans_10pt-Bold.ttf');
+  src: url('./assets/Fonts/NunitoSans_10pt-Bold.ttf');
 }
 
 @font-face {
   font-family: condensedBoldFont;
-  src: url('../public/assets/Fonts/NunitoSans_10pt_Condensed-Bold.ttf');
+  src: url('./assets/Fonts/NunitoSans_10pt_Condensed-Bold.ttf');
 }
 
 @font-face {
   font-family: regularFont;
-  src: url('../public/assets/Fonts/NunitoSans_10pt-Regular.ttf');
+  src: url('./assets/Fonts/NunitoSans_10pt-Regular.ttf');
 }
 
 
 
 @font-face {
   font-family: lightFont;
-  src: url('../public/assets/Fonts/NunitoSans_10pt-Light.ttf');
+  src: url('./assets/Fonts/NunitoSans_10pt-Light.ttf');
 }
 
 
 
 @font-face {
   font-family: blackFont;
-  src: url('../public/assets/Fonts/NunitoSans_10pt-Black.ttf');
+  src: url('./assets/Fonts/NunitoSans_10pt-Black.ttf');
 }
 
   
