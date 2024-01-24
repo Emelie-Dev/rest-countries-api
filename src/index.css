@@ -16,41 +16,34 @@
 
 body {
   background: var(--very-light-gray);
-  
 }
 
 @font-face {
   font-family: extraBoldFont;
-  src: url('./assets/Fonts/NunitoSans_10pt-ExtraBold.ttf');
+  src: url('./Fonts/NunitoSans_10pt-ExtraBold.ttf');
 }
 
 @font-face {
   font-family: boldFont;
-  src: url('./assets/Fonts/NunitoSans_10pt-Bold.ttf');
+  src: url('./Fonts/NunitoSans_10pt-Bold.ttf');
 }
 
 @font-face {
   font-family: condensedBoldFont;
-  src: url('./assets/Fonts/NunitoSans_10pt_Condensed-Bold.ttf');
+  src: url('./Fonts/NunitoSans_10pt_Condensed-Bold.ttf');
 }
 
 @font-face {
   font-family: regularFont;
-  src: url('./assets/Fonts/NunitoSans_10pt-Regular.ttf');
+  src: url('./Fonts/NunitoSans_10pt-Regular.ttf');
 }
-
-
 
 @font-face {
   font-family: lightFont;
-  src: url('./assets/Fonts/NunitoSans_10pt-Light.ttf');
+  src: url('./Fonts/NunitoSans_10pt-Light.ttf');
 }
-
-
 
 @font-face {
   font-family: blackFont;
-  src: url('./assets/Fonts/NunitoSans_10pt-Black.ttf');
+  src: url('./Fonts/NunitoSans_10pt-Black.ttf');
 }
-
-  
