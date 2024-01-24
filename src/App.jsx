@@ -36,8 +36,8 @@ function App() {
         <Header />
 
         <Routes>
-          <Route path="/" element={<Countries />} exact/>
-          <Route path="/country/:country" element={<CountryData />} exact/>
+          <Route path="/" element={<Countries />} />
+          <Route path="/country/:country" element={<CountryData />} />
         </Routes>
       </ModeContext.Provider>
     </>
