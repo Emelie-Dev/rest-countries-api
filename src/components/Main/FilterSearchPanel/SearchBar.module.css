@@ -113,10 +113,9 @@ form {
   }
 
   .dark::placeholder,.search-bar::placeholder  {
-    color: var(--white);
+ 
     font-size: 0.8rem;
-    font-family: regularFont;
-    opacity: 0.9;
+   
   }
   
 }
