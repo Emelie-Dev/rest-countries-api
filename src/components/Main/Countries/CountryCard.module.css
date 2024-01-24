@@ -119,19 +119,17 @@
 }
 
 .dark:hover {
-
   box-shadow: 2px -2px 5px #969696, -2px 2px 5px #ffffff;
   background: var(--dark-blue);
 }
 
 .dark-box {
   color: var(--white);
-  
 }
 
 .dark-loader {
   border-top: 4px solid var(--white);
- }
+}
 
 @keyframes rotation {
   0% {
@@ -142,11 +140,9 @@
   }
 }
 
-
 /* Media Queries */
 
 @media screen and (max-width: 1299px) and (min-width: 1200px) {
-
   .article {
     width: 15.5rem;
     margin-right: 3rem;
@@ -155,11 +151,9 @@
   .img {
     height: 11rem;
   }
-  
 }
 
 @media screen and (max-width: 1199px) and (min-width: 1100px) {
-
   .article {
     width: 14.5rem;
     margin-right: 2.5rem;
@@ -168,11 +162,9 @@
   .img {
     height: 11rem;
   }
-  
 }
 
 @media screen and (max-width: 1099px) and (min-width: 1000px) {
-
   .article {
     width: 13.5rem;
     margin-right: 2rem;
@@ -183,37 +175,24 @@
   }
 
   .info {
-   
     margin: 1rem 1.5rem 2rem;
   }
-  
-  
 }
 
-@media screen and (max-width: 999px) {
-
+@media screen and (max-width: 999px) and (min-width: 800px) {
   .article:nth-child(3n) {
     margin-right: 0;
   }
-  
-  
 }
 
-
 @media screen and (max-width: 999px) and (min-width: 900px) {
-
-  
   .article {
     width: 15.5rem;
     margin-right: 3rem;
   }
-
-  
 }
 
 @media screen and (max-width: 899px) and (min-width: 800px) {
-
-  
   .article {
     width: 14rem;
     margin-right: 2.5rem;
@@ -222,26 +201,66 @@
   .img {
     height: 10.5rem;
   }
- 
 }
 
-@media screen and (max-width: 799px)  {
+@media screen and (max-width: 799px) {
+  .article:nth-child(2n) {
+    margin-right: 0;
+  }
+}
 
-  
+@media screen and (max-width: 799px) and (min-width: 700px) {
   .article {
-    width: 13rem;
-    margin-right: 1.5rem;
+    margin-right: 4rem;
+    width: 17.5rem;
+  }
+}
+
+@media screen and (max-width: 699px) and (min-width: 600px) {
+  .article {
+    margin-right: 3rem;
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 599px) and (min-width: 550px) {
+  .article {
+    margin-right: 2rem;
+    width: 14rem;
   }
 
-  .img { 
+  .img {
     height: 10.5rem;
   }
+}
 
-  
-  .info {
-   
-    margin: 1rem 1.5rem 2rem;
+
+
+@media screen and (max-width: 549px) {
+  .article:nth-child(1n) {
+    margin-right: 0;
   }
-  
- 
+}
+
+
+@media screen and (max-width: 549px) and (min-width: 400px){
+  .article {
+    width: 20rem;
+  }
+
+  .img {
+    height: 12.5rem;
+  }
+}
+
+@media screen and (max-width: 399px) and (min-width: 300px){
+  .article {
+    width: 16rem;
+  }
+}
+
+@media screen and (max-width: 299px) {
+  .article {
+    width: 15rem;
+  }
 }

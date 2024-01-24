@@ -16,6 +16,7 @@
   cursor: pointer;
   justify-content: center;
   box-shadow: 1px 1px 6px -3px black, -1px -1px 6px -3px black;
+ 
 }
 
 .arrow {
@@ -192,4 +193,316 @@
     filter: blur(2px);
     letter-spacing: 4px;
   }
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1200px) and (min-width: 1000px) {
+  .img {
+    width: 30rem;
+    height: 20rem;
+   
+  }
+  .details {
+    margin-left: 4rem;
+  }
+}
+
+
+@media screen and (max-width: 999px) and (min-width: 850px) {
+
+  .img {
+    width: 25rem;
+    height: 20rem;
+   
+  }
+  .details {
+    margin-left: 2rem;
+  }
+  .details-head {
+
+    font-size: 1.5rem;
+  }
+
+  
+.button {
+
+  padding: 0.6rem 1.5rem;
+  font-size: 1rem;
+
+}
+}
+
+@media screen and  (max-width: 849px) and (min-width: 600px) {
+  .article {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+
+      width: 30rem;
+      height: 20rem;
+     
+    
+  }
+
+  .details {
+
+    margin-top: 2rem;
+    margin-left: 0;
+    margin: 2rem 10% 0;
+    
+  }
+
+  .main {
+
+    margin-bottom: 2rem;
+  }
+}
+
+@media screen and  (max-width: 599px) and (min-width: 400px) {
+  .article {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+
+      width: 22rem;
+      height: 18rem;
+     
+    
+  }
+  .button {
+
+    padding: 0.6rem 1.5rem;
+    font-size: 1rem;
+    transform: translateX(-25%);
+  
+  }
+  .details {
+
+    margin-top: 2rem;
+    margin-left: 0;
+    margin: 2rem 0% 0;
+    
+  }
+
+  .main {
+
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+  }
+
+  .details-head {
+
+    font-size: 1.7rem;
+  }
+
+  .details-list-box {
+    flex-direction: column;
+  }
+
+  .second-list {
+
+    margin-top: 3rem;
+    
+  }
+
+  
+.details-property {
+  font-size: 0.95rem;
+}
+
+.details-value {
+  font-size: 0.95rem;
+}
+}
+
+
+@media screen and  (max-width: 399px) and (min-width: 350px) {
+  .article {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+
+      width: 20rem;
+      height: 17rem;
+     
+    
+  }
+  .button {
+
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+    transform: translateX(-35%);
+  
+  }
+  .details {
+
+    margin-top: 2rem;
+    margin-left: 0;
+    margin: 2rem -15% 0;
+    
+  }
+
+  .main {
+
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+  }
+
+  .details-head {
+
+    font-size: 1.5rem;
+  }
+
+  .details-list-box {
+    flex-direction: column;
+  }
+
+  .second-list {
+
+    margin-top: 3rem;
+    
+  }
+
+  
+.details-property {
+  font-size: 0.95rem;
+}
+
+.details-value {
+  font-size: 0.95rem;
+}
+}
+
+@media screen and  (max-width: 349px) and (min-width: 300px) {
+  .article {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+
+      width: 18rem;
+      height: 15rem;
+     
+    
+  }
+  .button {
+
+    padding: 0.6rem 1rem;
+    font-size: 0.9rem;
+    transform: translateX(-45%);
+  
+  }
+  .details {
+
+    margin-top: 2rem;
+    margin-left: 0;
+    margin: 2rem -20% 0;
+    
+  }
+
+  .main {
+
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+  }
+
+  .details-head {
+
+    font-size: 1.5rem;
+  }
+
+  .details-list-box {
+    flex-direction: column;
+  }
+
+  .second-list {
+
+    margin-top: 3rem;
+    
+  }
+
+  
+.details-property {
+  font-size: 0.95rem;
+}
+
+.details-value {
+  font-size: 0.95rem;
+}
+}
+
+@media screen and  (max-width: 299px)  {
+  .article {
+
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .img {
+
+      width: 16rem;
+      height: 15rem;
+     
+    
+  }
+  .button {
+
+    padding: 0.6rem 1rem;
+    font-size: 0.8rem;
+    transform: translateX(-45%);
+  
+  }
+  .details {
+
+    margin-top: 2rem;
+    margin-left: 0;
+    margin: 2rem -20% 0;
+    
+  }
+
+  .main {
+
+    margin-bottom: 2rem;
+    margin-top: 3rem;
+    
+  }
+
+  .details-head {
+
+    font-size: 1.3rem;
+  }
+
+  .details-list-box {
+    flex-direction: column;
+  }
+
+  .second-list {
+
+    margin-top: 3rem;
+    
+  }
+
+  
+.details-property {
+  font-size: 0.9rem;
+}
+
+.details-value {
+  font-size: 0.9rem;
+}
 }

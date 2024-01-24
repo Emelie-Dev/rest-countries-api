@@ -15,16 +15,19 @@ const Countries = () => {
   const [showTopArrow, setShowTopArrow] = useState(false);
   const [darkMode, setDarkMode] = useContext(ModeContext);
 
-  // Add resize handler 
-  
+  // Add resize handler
+
   const matchWidth = () => {
     let gridNumber = 0;
 
     if (window.matchMedia('(min-width: 1000px)').matches) {
       gridNumber = 4;
-    } else {
-
+    } else if (window.matchMedia('(min-width: 800px)').matches) {
       gridNumber = 3;
+    } else if (window.matchMedia('(min-width: 550px)').matches) {
+      gridNumber = 2;
+    } else {
+      gridNumber = 1;
     }
 
     return gridNumber;

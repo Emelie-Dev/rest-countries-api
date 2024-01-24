@@ -4,12 +4,10 @@
   align-content: center;
   grid-template-columns: auto auto auto auto;
   margin: 0 4rem;
-  
 }
 
 .main-select {
-
-  justify-content: flex-start;
+  justify-content: flex-start !important;
 }
 
 .loader {
@@ -75,17 +73,32 @@
   }
 }
 
-
-
 /* Media Queries */
 
-@media screen and (max-width: 999px) {
- 
-  .main {
-    grid-template-columns: auto auto auto;
- 
+@media screen and (min-width: 1500px) {
 
-  }
-    
+  .main {
+
+    justify-content: space-around;
   }
   
+}
+
+@media screen and (max-width: 999px) and (min-width: 800px) {
+  .main {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (max-width: 799px) and (min-width: 550px){
+  .main {
+    grid-template-columns: auto auto;
+  }
+}
+
+
+@media screen and (max-width: 549px) {
+  .main {
+    grid-template-columns: auto;
+  }
+}

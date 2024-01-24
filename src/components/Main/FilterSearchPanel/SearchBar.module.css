@@ -75,7 +75,7 @@ form {
 @media screen and (max-width: 799px) {
   form {
   
-    width: 55%;
+    width: 60%;
   }
 
   .search-bar {
@@ -84,3 +84,39 @@ form {
 
   }
 }  
+
+
+@media screen and (max-width: 699px) {
+  form {
+  
+    width: 90%;
+  }
+
+  .search-bar {
+   
+    font-size: 1rem;
+
+  }
+}  
+
+
+@media screen and (max-width: 399px) {
+  form {
+  
+    width: 100%;
+  }
+
+  .search-bar {
+   
+    font-size: 1rem;
+
+  }
+
+  .dark::placeholder,.search-bar::placeholder  {
+    color: var(--white);
+    font-size: 0.8rem;
+    font-family: regularFont;
+    opacity: 0.9;
+  }
+  
+}

@@ -217,7 +217,7 @@ const CountryData = () => {
                 </li>
               </ul>
 
-              <ul className={`${styles['details-list']} second-list`}>
+              <ul className={`${styles['details-list']} ${styles['second-list']}`}>
                 <li className={styles['details-item']}>
                   <span className={styles['details-property']}>
                     Top Level Domain:
